@@ -1,11 +1,20 @@
-Untitled
+martha johana rozo delgado 1950200
 ================
 
-## GitHub Documents
+## estas son las mediciones de la calidad del aire en nueva york
 
-This is an R Markdown format used for publishing markdown documents to
-GitHub. When you click the **Knit** button all R code chunks are run and
-a markdown file (.md) suitable for publishing to GitHub is generated.
+este trabajo nos va a mostrar las mediciones diarias de la calidad de
+aire en nueva york,observando los criterios de**AIRQUALITY**
+
+este dataframe sobre la calidad de aire en nueva york
+
+``` r
+data(airquality)
+solar <- airquality["Solar.R"]
+temp <- airquality["Temp"]
+ozono <- airquality["Ozone"]
+Refectancia  <- (solar-temp)^2/ozono
+```
 
 ## Including Code
 
